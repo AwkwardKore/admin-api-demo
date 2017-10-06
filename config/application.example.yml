@@ -1,0 +1,15 @@
+development:
+  DATABASE_NAME: # Name of the database 
+  DATABASE_NAME_TEST: # Name of test database
+  DATABASE_POOL: # Number of database connections
+  DATABASE_USERNAME: # Username of the database
+  DATABASE_PASSWORD: # Password of the database
+
+production:
+  SECRET_KEY_BASE: # Generate with 'bundle exec rake secret'
+
+  DATABASE_NAME: # Name of the database 
+  DATABASE_POOL: # Number of database connections
+  DATABASE_USERNAME: # Username of the database
+  DATABASE_PASSWORD: # Password of the database
+
