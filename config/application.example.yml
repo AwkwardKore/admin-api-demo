@@ -5,11 +5,23 @@ development:
   DATABASE_USERNAME: # Username of the database
   DATABASE_PASSWORD: # Password of the database
 
+  # MAILER SETTINGS
+  EMAIL_ADDRESS:
+  EMAIL_PORT:
+
 production:
   SECRET_KEY_BASE: # Generate with 'bundle exec rake secret'
+
+  APP_DOMAIN: # www.app.com
 
   DATABASE_NAME: # Name of the database 
   DATABASE_POOL: # Number of database connections
   DATABASE_USERNAME: # Username of the database
   DATABASE_PASSWORD: # Password of the database
 
+  # MAILER SETTINGS
+  EMAIL_ADDRESS:
+  EMAIL_DOMAIN:
+  EMAIL_PASSWORD:
+  EMAIL_PORT:
+  EMAIL_USERNAME:

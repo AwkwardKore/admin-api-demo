@@ -32,5 +32,18 @@ module AdminApiDemo
     config.middleware.use ActionDispatch::Flash
     config.middleware.use ActionDispatch::Cookies
     config.middleware.use ActionDispatch::Session::CookieStore
+
+    ActionMailer::Base.smtp_settings = {
+      address: Figaro.env.EMAIL_ADDRESS,
+      domain: Figaro.env.EMAIL_DOMAIN,
+      password: Figaro.env.EMAIL_PASSWORD,
+      port: Figaro.env.EMAIL_PORT,
+      user_name: Figaro.env.EMAIL_USERNAME,
+      authenticatin: :plain,
+      enable_starttls_auto: true
+    }
+
+    config.action_mailer.delivery_method = :smtp
+    config.action_mailer.default_url_options = { host: "#{Figaro.env.APP_DOMAIN}" }
   end
 end
