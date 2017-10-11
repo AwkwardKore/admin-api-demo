@@ -39,7 +39,7 @@ module AdminApiDemo
       password: Figaro.env.EMAIL_PASSWORD,
       port: Figaro.env.EMAIL_PORT,
       user_name: Figaro.env.EMAIL_USERNAME,
-      authenticatin: :plain,
+      authentication: :plain,
       enable_starttls_auto: true
     }
 
