@@ -30,7 +30,7 @@ gem 'figaro', '~> 1.1'
 
 # ActiveAdmin
 gem 'devise', '> 4.x'
-gem 'activeadmin', github: 'activeadmin'
+gem 'activeadmin', '~> 1.1'
 gem 'inherited_resources', git: 'https://github.com/activeadmin/inherited_resources'
 
 # Token authentication with devise
